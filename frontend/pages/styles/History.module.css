@@ -1,0 +1,82 @@
+/* History.module.css */
+
+/* Container principal da página */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título principal da página */
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Estilo da lista de documentos */
+  .documentList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .documentItem {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo do nome do arquivo */
+  .documentItem h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo do texto */
+  .documentItem p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilo do botão para ver detalhes */
+  .viewButton,
+  .downloadButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .viewButton:hover,
+  .downloadButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo do botão de download */
+  .downloadButton {
+    background-color: #28a745;
+  }
+  
+  .downloadButton:hover {
+    background-color: #218838;
+  }
+  
+  /* Estilo de mensagens de erro */
+  .errorMessage {
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  

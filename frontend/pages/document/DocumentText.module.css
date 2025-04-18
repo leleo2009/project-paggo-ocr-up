@@ -1,0 +1,44 @@
+.questionBlock {
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.questionHeading {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.questionInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.askButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.askButton:hover {
+  background-color: #0056b3;
+}
+
+.responseBlock {
+  margin-top: 20px;
+}
+
+.responseHeading {
+  font-size: 1.3rem;
+  font-weight: bold;
+}

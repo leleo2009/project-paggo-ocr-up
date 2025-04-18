@@ -1,0 +1,23 @@
+# Ignorar a pasta .next
+.next/
+
+# Ignorar a pasta node_modules
+node_modules/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de configuração locais
+*.env
+.env.*
+
+# Ignorar a pasta de build
+/build/
+
+# Ignorar arquivos específicos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos temporários
+*.tmp
+*.swp
