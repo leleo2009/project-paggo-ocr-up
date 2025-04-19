@@ -18,7 +18,7 @@ const RegisterPage = () => {
     setError('');
 
     try {
-      const res = await fetch('http://localhost:3001/users', {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/users`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
