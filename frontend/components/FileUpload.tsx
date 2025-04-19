@@ -26,7 +26,7 @@ const FileUpload: React.FC = () => {
     e.preventDefault();
 
     if (!file) {
-      return alert('Selecione um arquivo primeiro'); // Aviso se nenhum arquivo foi selecionado
+      return alert('Selecione um arquivo primeiro');
     }
 
     const formData = new FormData();
@@ -39,10 +39,10 @@ const FileUpload: React.FC = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:3001/document/upload', {
+      const response = await fetch('https://project-paggo-ocr-up.onrender.com/document/upload', {
         method: 'POST',
         headers: {
-          Authorization: `Bearer ${token}`, // Envia o token na requisição
+          Authorization: `Bearer ${token}`,
         },
         body: formData,
       });
@@ -56,10 +56,8 @@ const FileUpload: React.FC = () => {
       const data = await response.json();
       console.log('Resposta do backend:', data);
 
-      // Confirmação de sucesso
       alert('Arquivo enviado com sucesso!');
       if (data.id) {
-        // Redireciona para a página do documento se o ID for retornado
         router.push(`/document/${data.id}`);
       } else {
         alert('ID do documento não retornado pelo backend');
@@ -84,10 +82,9 @@ const FileUpload: React.FC = () => {
         <button type="submit" className={styles.button}>Enviar</button>
       </form>
       <div className={styles.linkContainer}>
-      <Link href="/history" className={styles.link}>
+        <Link href="/history" className={styles.link}>
           Ver Histórico
-      </Link>
-
+        </Link>
       </div>
     </div>
   );
