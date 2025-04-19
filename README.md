@@ -152,7 +152,7 @@ Você pode testar as rotas utilizando ferramentas como **Insomnia** ou **Postman
 ### Frontend:
 
 O frontend está hospedado no Vercel.  
-🔗 [**Acesse aqui a versão online**](https://paggo-ocr-case.vercel.app)
+🔗 [**Acesse aqui a versão online**](https://project-paggo-ocr-up.vercel.app)
 
 ### Backend:
 
