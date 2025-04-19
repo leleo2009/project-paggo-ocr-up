@@ -2,9 +2,7 @@
   <a href="https://nestjs.com/" target="_blank">
     <img src="https://nestjs.com/img/logo-small.svg" width="120" alt="NestJS Logo" />
   </a>
-</p>
-
-<p align="center">
+  &nbsp;&nbsp; <!-- Adiciona espaço entre as imagens -->
   <a href="https://example-link-to-your-readme-image.com" target="_blank">
     <img src="URL_TO_FRONTEND_IMAGE" width="120" alt="Frontend Image" />
   </a>
