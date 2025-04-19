@@ -4,6 +4,13 @@
   </a>
 </p>
 
+<p align="center">
+  <a href="https://example-link-to-your-readme-image.com" target="_blank">
+    <img src="URL_TO_FRONTEND_IMAGE" width="120" alt="Frontend Image" />
+  </a>
+</p>
+
+
 <h1 align="center">Paggo - OCR Case</h1>
 
 <p align="center">
