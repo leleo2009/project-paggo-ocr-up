@@ -27,51 +27,78 @@
 ## 📦 Instalação e Setup
 
 ### 1. Instalar dependências
+
 ```bash
 npm install
+```
 
-2. Executar o projeto
-Desenvolvimento
+### 2. Executar o projeto
 
+#### Desenvolvimento
+```bash
 npm run start:dev
+```
 
-Produção
-
+#### Produção
+```bash
 npm run start:prod
+```
 
-3. Variáveis de Ambiente
-Crie um arquivo .env na raiz do projeto com o seguinte conteúdo:
+### 3. Variáveis de Ambiente
 
+Crie um arquivo `.env` na raiz do projeto com o seguinte conteúdo:
+
+```env
 NEXT_PUBLIC_API_URL=http://localhost:3001
 JWT_SECRET=your_jwt_secret
 DATABASE_URL=your_database_url
 OPENAI_API_KEY=sua-chave-da-openai
+```
 
-📌 Principais Rotas
+---
 
-Método	Rota	Descrição
-POST	/document/upload	Upload de documentos com OCR
-GET	/document/:id/text	Exibe o texto extraído do documento
-GET	/document/:id/explain	Explicação gerada pela IA (GPT-4)
-POST	/document/:id/ask	Perguntas e respostas com base no documento
-GET	/document/history	Lista o histórico de documentos do usuário
-GET	/document/download/:id	Faz download do documento original
-POST	/auth/login	Autenticação e geração de token JWT
-GET	/users	Lista todos os usuários
-🔍 Testes via Insomnia/Postman
-Você pode testar as rotas utilizando ferramentas como Insomnia ou Postman.
+## 📌 Principais Rotas
 
-⚠️ A integração com o frontend já está funcional e conectada ao backend.
+| Método | Rota                     | Descrição                                           |
+|--------|--------------------------|-----------------------------------------------------|
+| POST   | /document/upload         | Upload de documentos com OCR                        |
+| GET    | /document/:id/text       | Exibe o texto extraído do documento                 |
+| GET    | /document/:id/explain    | Explicação gerada pela IA (GPT-4)                   |
+| POST   | /document/:id/ask        | Perguntas e respostas com base no documento         |
+| GET    | /document/history        | Lista o histórico de documentos do usuário          |
+| GET    | /document/download/:id   | Faz download do documento original                  |
+| POST   | /auth/login              | Autenticação e geração de token JWT                 |
+| GET    | /users                   | Lista todos os usuários                             |
 
-🚀 Deploy
-O projeto pode ser facilmente implantado utilizando Vercel, Render, Railway, Heroku ou qualquer outro serviço que suporte aplicações Node.js.
+---
 
-📚 Recursos Adicionais
-Documentação NestJS
+## 🔍 Testes via Insomnia/Postman
 
-Documentação Prisma
+Você pode testar as rotas utilizando ferramentas como **Insomnia** ou **Postman**.
 
-OpenAI GPT-4
+---
 
-📄 Licença
-Este projeto está licenciado sob a MIT License.
+## ⚠️ Integração com o Frontend
+
+A integração com o frontend já está funcional e conectada ao backend.
+
+---
+
+## 🚀 Deploy
+
+O projeto pode ser facilmente implantado utilizando **Vercel**, **Render**, **Railway**, **Heroku** ou qualquer outro serviço que suporte aplicações Node.js.
+
+---
+
+## 📚 Recursos Adicionais
+
+- [Documentação NestJS](https://docs.nestjs.com/)
+- [Documentação Prisma](https://www.prisma.io/docs)
+- [OpenAI GPT-4](https://platform.openai.com/docs/guides/gpt)
+- [JWT.io](https://jwt.io/)
+
+---
+
+## 📄 Licença
+
+Este projeto está licenciado sob a **MIT License**.
