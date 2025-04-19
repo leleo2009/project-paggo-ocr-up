@@ -54,4 +54,4 @@ O projeto está disponível online através do Vercel. O frontend foi deployado 
 🔗 Frontend Online (Vercel)
 
 📄 Licença
-Este projeto está licenciado sob a MIT License
+Este projeto está licenciado sob a MIT License.
