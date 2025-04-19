@@ -10,7 +10,7 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'http://localhost:3000', // ambiente local
-      'https://project-paggo-ocr-bioqpignp.vercel.app', // seu frontend no Vercel
+      'https://project-paggo-ocr-up.vercel.app/', // seu frontend no Vercel
     ],
     credentials: true,
   });
