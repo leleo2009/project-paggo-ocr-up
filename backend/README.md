@@ -45,6 +45,7 @@ Crie um arquivo .env na raiz do projeto com o seguinte conteúdo:
 NEXT_PUBLIC_API_URL=http://localhost:3001
 JWT_SECRET=your_jwt_secret
 DATABASE_URL=your_database_url
+OPENAI_API_KEY=sua-chave-da-openai
 
 📌 Principais Rotas
 
