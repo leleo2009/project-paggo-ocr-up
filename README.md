@@ -2,7 +2,6 @@
   <a href="https://nestjs.com/" target="_blank">
     <img src="https://nestjs.com/img/logo-small.svg" width="120" alt="NestJS Logo" />
   </a>
-  &nbsp;&nbsp; <!-- Adiciona espaço entre as imagens -->
   <a href="https://nextjs.org/" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" width="120" alt="Frontend Image" />
   </a>
