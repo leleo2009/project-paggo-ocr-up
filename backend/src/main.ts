@@ -15,6 +15,13 @@ async function bootstrap() {
     credentials: true,
   });
 
-  await app.listen(parseInt(process.env.PORT ?? '3001'), '0.0.0.0');
+  console.log('CORS habilitado para: ', [
+    'http://localhost:3000',
+    'https://project-paggo-ocr-up.vercel.app',
+  ]);
+
+  const port = process.env.PORT;
+if (!port) throw new Error('PORT is not defined in environment variables');
+await app.listen(port);
 }
 bootstrap();
