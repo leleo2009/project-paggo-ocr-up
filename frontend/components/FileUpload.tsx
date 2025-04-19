@@ -5,13 +5,13 @@ import styles from './FileUpload.module.css';
 
 const FileUpload: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
+  const [isLoading, setIsLoading] = useState(false); // Novo estado
   const router = useRouter();
 
-  // Verificar se o token está presente e redirecionar se necessário
   useEffect(() => {
     const token = localStorage.getItem('token');
     if (!token) {
-      router.push('/login'); // Se não houver token, redireciona para login
+      router.push('/login');
     }
   }, [router]);
 
@@ -39,6 +39,8 @@ const FileUpload: React.FC = () => {
     }
 
     try {
+      setIsLoading(true); // Começa o loading
+
       const response = await fetch('https://project-paggo-ocr-up.onrender.com/document/upload', {
         method: 'POST',
         headers: {
@@ -65,6 +67,8 @@ const FileUpload: React.FC = () => {
     } catch (err) {
       console.error('Erro ao enviar arquivo:', err);
       alert('Erro ao enviar o arquivo');
+    } finally {
+      setIsLoading(false); // Finaliza o loading
     }
   };
 
@@ -79,7 +83,13 @@ const FileUpload: React.FC = () => {
           onChange={handleFileChange}
           className={styles.input}
         />
-        <button type="submit" className={styles.button}>Enviar</button>
+        <button
+          type="submit"
+          className={styles.button}
+          disabled={isLoading}
+        >
+          {isLoading ? 'Enviando...' : 'Enviar'}
+        </button>
       </form>
       <div className={styles.linkContainer}>
         <Link href="/history" className={styles.link}>
